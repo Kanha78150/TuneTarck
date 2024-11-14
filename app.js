@@ -21,7 +21,7 @@ const authRouter = require("./router/auth-router");
 app.use("/api/auth", authRouter);
 
 // Route to render index.ejs
-app.post("/index", (req, res) => {
+app.get("/index", (req, res) => {
     res.render("index"); // Ensure index.ejs is in the 'views' directory
 });
 
