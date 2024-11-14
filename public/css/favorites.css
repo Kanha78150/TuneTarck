@@ -1,0 +1,105 @@
+body {
+	background: linear-gradient(to bottom, #3498db, #e74c3c);
+	background-size: 100% 300px;
+	background-position: 0% 100%;
+}
+
+header {
+	background-color: #333;
+	padding: 1em;
+	text-align: right;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.btn {
+	background-color: #fff;
+	color: #333;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+}
+
+h1 {
+	color: #fff;
+	font-size: 36px;
+}
+
+section {
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+h2 {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 20px;
+}
+
+img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+h3 {
+	color: #333;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+p {
+	color: #666;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+button[type="button"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+button[type="button"]:hover {
+	background-color: #3e8e41;
+}
+
+button[type="button"]:nth-child(2) {
+	background-color: #e74c3c;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}

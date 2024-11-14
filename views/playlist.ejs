@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TuneTrek - Playlist</title>
+	<link rel="stylesheet" href="/css/output.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+	<div class="flex flex-col lg:flex-row min-h-screen">
+		<aside class="lg:w-64 bg-gray-800 p-6 lg:h-auto flex-shrink-0 lg:block">
+			<h2 class="text-2xl font-bold text-purple-500 mb-6">TuneTrek</h2>
+			<nav class="space-y-4">
+				<a href="/" class="flex items-center text-gray-300 hover:text-white">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
+						fill="currentColor">
+						<path d="M10 2a8 8 0 108 8 8 8 0 00-8-8zm3 9H9V5a1 1 0 112 0v4h2a1 1 0 010 2z" />
+					</svg>
+					Home
+				</a>
+				<a href="/fav" class="flex items-center text-gray-300 hover:text-white">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
+						fill="currentColor">
+						<path d="M10 2a8 8 0 108 8 8 8 0 00-8-8zm3 9H9V5a1 1 0 112 0v4h2a1 1 0 010 2z" />
+					</svg>
+					My Favorites
+				</a>
+			</nav>
+		</aside>
+		<main class="flex-grow p-6 lg:p-8">
+			<div class="flex flex-col lg:flex-row items-center lg:items-start space-x-0 lg:space-x-4 mb-8">
+				<img src="../images/imgae1.jpeg" alt="Playlist Cover"
+					class="w-24 h-24 lg:w-32 lg:h-32 rounded-lg shadow-md mb-4 lg:mb-0">
+				<div class="text-center lg:text-left">
+					<h1 class="text-3xl lg:text-4xl font-bold">My Favorites</h1>
+					<p class="text-gray-400">A collection of my favorite tracks</p>
+					<button id="play-all"
+						class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700">Play All</button>
+					<audio class="song" src="../songs/song1.mp3" preload="auto"></audio>
+					<audio class="song" src="../songs/song2.mp3" preload="auto"></audio>
+					<audio class="song" src="../songs/song3.mp3" preload="auto"></audio>
+					<audio class="song" src="../songs/song4.mp3" preload="auto"></audio>
+					<audio class="song" src="../songs/song5.mp3" preload="auto"></audio>
+					<audio class="song" src="../songs/song6.mp3" preload="auto"></audio>
+					<audio class="song" src="../songs/song7.mp3" preload="auto"></audio>
+					<audio class="song" src="../songs/song8.mp3" preload="auto"></audio>
+					<audio class="song" src="../songs/song9.mp3" preload="auto"></audio>
+					<audio class="song" src="../songs/song10.mp3" preload="auto"></audio>
+				</div>
+			</div>
+
+			<ul id="song-list" class="space-y-4">
+				<!-- Song List will be populated by here -->
+			</ul>
+
+			<div id="audio-player" class="mt-6">
+				<audio id="audio" class="w-full" controls>
+					<source id="audio-source" src="" type="audio/mp3">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+		</main>
+	</div>
+
+	<button class="lg:hidden text-white p-4" id="menu-toggle">
+		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+			<path fill-rule="evenodd"
+				d="M4 5h12a1 1 0 110 2H4a1 1 0 110-2zm0 4h12a1 1 0 110 2H4a1 1 0 110-2zm0 4h12a1 1 0 110 2H4a1 1 0 110-2z"
+				clip-rule="evenodd" />
+		</svg>
+	</button>
+
+	<script src="../js/playlist.js"></script>
+</body>
+
+</html>

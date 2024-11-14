@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TuneTrek - Favorites</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+	<header class="bg-gray-800 p-4">
+		<nav class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+			<h1 class="text-2xl font-bold text-purple-500 mb-2 sm:mb-0">TuneTrek</h1>
+			<a href="/playlist"
+				class="text-white hover:bg-purple-600 bg-purple-500 px-4 py-2 rounded-md text-center w-full sm:w-auto">Back
+				to Playlist</a>
+		</nav>
+	</header>
+	<main class="container mx-auto p-6">
+		<section>
+			<h2 class="text-3xl font-bold mb-6 text-center sm:text-left">Favorite Songs</h2>
+			<ul id="favorite-list" class="space-y-4"></ul>
+		</section>
+	</main>
+
+	<script src="../js/favorites.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 flex justify-center items-center min-h-screen">
+    <div class="flex flex-col md:flex-row w-full max-w-6xl mx-auto shadow-lg rounded-lg overflow-hidden">
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 p-6 bg-gray-800 w-full md:w-1/2">
+
+            <div class="bg-purple-300 text-gray-900 rounded-lg p-4 flex items-center justify-center text-center">
+                <span>Total Care.<br>Total Different.</span>
+            </div>
+            <div class="bg-purple-300 rounded-lg flex items-center justify-center">
+                <span class="text-3xl">⚡</span>
+            </div>
+            <div class="bg-yellow-200 text-gray-900 rounded-lg p-4 flex items-center justify-center text-center">
+                <span>Where words fail, music speaks</span>
+            </div>
+
+
+            <div class="bg-yellow-200 text-gray-900 rounded-lg p-4 flex items-center justify-center text-center">
+                <span>Own your power</span>
+            </div>
+            <div class="bg-purple-300 text-gray-900 rounded-lg p-4 flex items-center justify-center text-center">
+                <span>Music is the universal language of mankind.</span>
+            </div>
+            <div class="bg-purple-300 rounded-lg flex items-center justify-center">
+                <span class="text-3xl">🔒</span>
+            </div>
+
+
+            <div class="bg-yellow-200 text-gray-900 rounded-lg p-4 flex items-center justify-center text-center">
+                <span>Empowering the future</span>
+            </div>
+            <div class="bg-purple-300 text-gray-900 rounded-lg p-4 flex items-center justify-center text-center">
+                <span>Music can change the world because it can change people.</span>
+            </div>
+            <div class="bg-yellow-200 rounded-lg p-4 flex items-center justify-center text-center">
+                <span>Join the revolution</span>
+            </div>
+        </div>
+
+        <!-- Right Section: Sign Up Form -->
+        <div class="bg-gray-900 w-full md:w-1/2 p-8 flex flex-col justify-center">
+            <h2 class="text-white text-3xl font-semibold mb-4 text-center">Sign Up</h2>
+            <p class="text-gray-400 mb-6 text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+
+            <form class="space-y-4" action="/api/auth/login" method="post">
+                <div>
+                    <input type="text" placeholder="Enter Your Name"
+                        class="w-full px-4 py-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        name="name">
+                </div>
+                <div>
+                    <input type="email" placeholder="Email"
+                        class="w-full px-4 py-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        name="email">
+                </div>
+                <div>
+                    <input type="password" placeholder="Password"
+                        class="w-full px-4 py-2 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        name="password">
+                </div>
+                <button type="submit"
+                    class="w-full py-2 bg-purple-600 text-white rounded-md font-semibold hover:bg-purple-700"
+                    value="login">Sign up</button>
+
+            </form>
+
+            <div class="flex items-center mt-6">
+                <hr class="flex-1 border-gray-700">
+                <span class="text-gray-400 px-3">Or</span>
+                <hr class="flex-1 border-gray-700">
+            </div>
+
+            <div class="flex justify-between mt-4">
+                <button class="w-1/2 mr-2 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Google</button>
+                <button class="w-1/2 ml-2 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">Facebook</button>
+            </div>
+
+            <span class="mt-5 text-zinc-100 text-lg text-center">Already have an account <a href="/login"
+                    class="hover:underline text-blue-400">Login</a></span>
+        </div>
+    </div>
+</body>
+
+</html>
